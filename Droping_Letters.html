@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropingletter</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&display=swap');
+        body{
+            margin: 0px;
+            
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(#eecda3,#ef629f);
+            position: relative;
+ 
+        }
+        .box .letter{
+            font-size: 5.5rem;
+            font-weight: 600;
+            font-family: "Dancing Script", cursive;
+            position: absolute;
+            opacity: 0;
+            top: 350px;
+            animation: letters 1.0s linear forwards;
+            
+        }
+        .letter:nth-child(1)
+        {
+            top: -50px;
+            left: 650px;
+            animation-delay: 0.1s;
+        }
+        .letter:nth-child(2)
+        {
+            top: -50px;
+            left: 700px;
+            animation-delay: 0.3s;
+        }
+        .letter:nth-child(3)
+        {
+            top: -50px;
+            left: 750px;
+            animation-delay: 0.6s;
+        }
+        .letter:nth-child(4)
+        {
+            top: -50px;
+            left: 810px;
+            animation-delay: 0.9s;
+        }
+        @keyframes letters {
+            0%{
+                opacity: 0;
+               
+            }
+            25%{
+                top: 350px;
+                opacity: 0.1;
+            }
+            50%{
+                top: 350px;
+                opacity: 0.2;
+            }
+            75%{
+                top: 350px;
+                opacity: 0.8;
+            }
+            100%{
+                top: 350px;
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="letter">H</div>
+        <div class="letter">E</div>
+        <div class="letter">M</div>
+        <div class="letter">A</div>
+    </div>
+</body>
+</html>

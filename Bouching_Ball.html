@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncingball</title>
+    <style>
+        body{
+            margin: 0;
+        }
+           
+        .linear-gradient{
+            height: 750px;
+            width: 100%;
+            background: linear-gradient(rgb(220, 203, 171), rgb(231, 214, 214) );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .radius{
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(closest-side at 60% 10%, rgb(254, 244, 244, 0.3) 50%,  rgb(225, 186, 186));
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            animation: ball 0.9s infinite ease alternate;
+        }
+        .line{
+            height: 10px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.249);
+            border-radius: 30px;
+            position: fixed;
+            top: 600px ;
+            right: 660px;
+        }
+        @keyframes ball {
+            from{
+                top: 20px;
+            }
+            to{
+                top: 303px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="linear-gradient">
+            <div class="radius">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

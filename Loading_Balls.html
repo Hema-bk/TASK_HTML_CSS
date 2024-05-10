@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Ball</title>
+    <style>
+        .bouncing{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .ball{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 0 5px;
+            animation: loading 2.5s linear infinite;
+        }
+        .ball:nth-child(1){
+            animation-delay: 0s;
+        }
+        .ball:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        .ball:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        .ball:nth-child(4){
+            animation-delay: 0.3s;
+        }
+        .ball:nth-child(5){
+            animation-delay: 0.4s;
+        }
+        .ball:nth-child(6){
+            animation-delay: 0.5s;
+        }
+        .ball:nth-child(7){
+            animation-delay: 0.6s;
+        }
+        .ball:nth-child(8){
+            animation-delay: 0.7s;
+        }
+        .ball:nth-child(9){
+            animation-delay: 0.8s;
+        }
+        .ball:nth-child(10){
+            animation-delay: 0.9s;
+        }
+        @keyframes loading {
+            0%{
+                transform: translateY(5px);
+            }
+            10%{
+                transform: translateY(-15px);
+                background-color: aqua;
+            }
+
+            20%{
+                transform: translateY(5px);
+                background-color: rgb(106, 247, 247);
+            }
+            30%{
+                transform: translateY(-15px);
+                background-color: skyblue;
+            }
+            40%{
+                transform: translateY(5px);
+                background-color: rgb(17, 179, 244);
+            }
+            50%{
+                transform: translateY(-15px);
+                background-color: aquamarine;
+            }
+            60%{
+                transform: translateY(5px);
+                background-color: rgb(0, 255, 170);
+            }
+            70%{
+                transform: translateY(-15px);
+                background-color: rgb(8, 199, 247);
+            }
+            80%{
+                transform: translateY(5px);
+                background-color: rgba(17, 17, 251, 0.678);
+            }
+            90%{
+                transform: translateY(-15px);
+                background-color: blue;
+            }
+            100%{
+                transform: translateY(5px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bouncing">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

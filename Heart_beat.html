@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 600px;
+            width: 600px;
+            background-color: seashell;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            padding-left: 450px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(-45deg);
+            box-shadow: 0 2px 20px rgb(142, 8, 8);
+            animation: animate 0.7s linear infinite;
+            
+        }
+        .box:before{
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: red;
+            top: -50%;
+            border-radius: 200px;
+        }
+        .box:after{
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: red;
+            right: -50%;
+            border-radius: 200px;
+        }
+        @keyframes animate {
+            from{
+                    transform: rotate(-45deg)
+                    scale(1);
+            }
+            to{
+                transform: rotate(-45deg)
+                    scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="box"></div
+</body>
+</html>
